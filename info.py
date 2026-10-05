@@ -22,22 +22,22 @@ INDEX_CAPTION = bool(environ.get('INDEX_CAPTION', False))
 COVER = bool(environ.get('COVER', False))
 PICS = (environ.get('PICS', 'https://i.ibb.co/PzZNZHF6/IMG-20251116-113905-254.jpg https://i.ibb.co/8npWSZ5T/pic.jpg')).split()
 MELCOW_PHOTO = environ.get("MELCOW_PHOTO", "https://i.ibb.co/2769f1rF/photo-2025-09-03-14-48-34-7548400762112442372.jpg")
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1255023013').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', ''))
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', ''))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1798348973 6661494944').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002148604082').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002265223323'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002265223323'))
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002265223323'))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '').split()]
-AUTH_CHANNELS = [int(ch) for ch in environ.get("AUTH_CHANNELS", "").split() if ch and id_pattern.match(ch)]
+AUTH_CHANNELS = [int(ch) for ch in environ.get("AUTH_CHANNELS", "-1002265223323").split() if ch and id_pattern.match(ch)]
 AUTH_REQ_CHANNELS = [int(ch) for ch in environ.get("AUTH_REQ_CHANNELS", "").split() if ch and id_pattern.match(ch)]
 REQST_CHANNEL = int(ch) if (ch := environ.get("REQST_CHANNEL", "")) and id_pattern.search(ch) else None
-SUPPORT_CHAT_ID = int(ch) if (ch := environ.get("SUPPORT_CHAT_ID", "")) and id_pattern.search(ch) else None
+SUPPORT_CHAT_ID = int(ch) if (ch := environ.get("SUPPORT_CHAT_ID", "-1002396546048")) and id_pattern.search(ch) else None
 
 OWNER = int(os.environ.get("OWNER", "1255023013"))
-CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://telegram.me/Techifybots')
-GROUP_LINK = environ.get('GROUP_LINK', 'https://telegram.me/TechifySupport')
+CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://telegram.me/ZCINEHUB')
+GROUP_LINK = environ.get('GROUP_LINK', 'https://telegram.me/RK_PRIMESHIP')
 
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Deepak:Deepak@cluster0.gq9gf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "filter")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'files')
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False)
@@ -53,11 +53,11 @@ TMDB_POSTER = bool(environ.get('TMDB_POSTER', True))
 LANDSCAPE_POSTER = bool(environ.get('LANDSCAPE_POSTER', True))
 
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '1002265223323'))
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://i.ibb.co/xqNtSMpS/photo-2025-09-18-15-24-38-7551450511015149572.jpg")
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/TechifyBots")
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/TechifyBots")
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/TechifyBots")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/RKMOVIESZIP")
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/RKMOVIESZIP")
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/RKMOVIESZIP")
 SHORTENER_API = environ.get("SHORTENER_API", "a7ac9b3012c67d7491414cf272d82593c75f6cbb")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "omegalinks.in")
 SHORTENER_API2 = environ.get("SHORTENER_API2", "a7ac9b3012c67d7491414cf272d82593c75f6cbb")
