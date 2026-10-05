@@ -37,7 +37,7 @@ OWNER = int(os.environ.get("OWNER", "1255023013"))
 CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://telegram.me/ZCINEHUB')
 GROUP_LINK = environ.get('GROUP_LINK', 'https://telegram.me/RK_PRIMESHIP')
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Deepak:Deepak@cluster0.gq9gf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "filter")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'files')
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False)
